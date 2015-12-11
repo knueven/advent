@@ -6,9 +6,7 @@ rule2Letters = ["i", "o", "l"]
 def increment(pw):
     charlist = list(pw)
     for idx, char in reversed(list(enumerate(pw))):
-        # unicode of the character
         utf = ord(char)
-        #122 is 'z'
         if utf != 122:
             charlist[idx] = chr(utf + 1)
             break
